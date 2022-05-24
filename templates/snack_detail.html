@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1> Hello and Welcome to the Snack Tracker! </h1>
+  <div>
+    <h2>{{ snackmodel.name }} </h2>
+    <p>Snack Purchaser: {{ snackmodel.purchaser }}</p>
+    <p>Snack Description: {{ snackmodel.description }} </p>
+  </div>
+{% endblock content %}
