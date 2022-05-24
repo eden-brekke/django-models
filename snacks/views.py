@@ -5,3 +5,7 @@ from .models import SnackModel
 class SnackModelListView(ListView):
   template_name = 'snack_list.html'
   model = SnackModel
+  
+class SnackModelDetailView(DetailView):
+  template_name = 'snack_detail.html'
+  model = SnackModel
