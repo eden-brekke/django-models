@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 <h1> Hello and Welcome to the Snack Tracker! </h1>
+<a href="{% url 'snack_list' %}">Back to the Snack List!</a>
   <div>
     <h2>{{ snackmodel.name }} </h2>
     <p>Snack Purchaser: {{ snackmodel.purchaser }}</p>
