@@ -5,7 +5,7 @@ from django.contrib.auth import get_user_model
 class SnackModel(models.Model):
   name = models.CharField(max_length=64)
   purchaser = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
-  description = models.TextField()
+  description = models.TextField(default=None)
   
   def __str__(self):
     return self.name
